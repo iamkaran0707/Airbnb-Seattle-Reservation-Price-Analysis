@@ -27,9 +27,13 @@ This dataset is way useful because we can analyze some of the questions like :
 PART-3 : STRUCTURE OF THE PROJECT:
 
 For this project we have -- 1 code file: project.ipynb
+
                          -- 3 datasets : listings.csv
+                         
                                        : calendar.csv
+                                       
                                        : reviews.csv (This is not much useful for us, we will only work with above 2 files)
+                                       
                          -- 1 readme file, where we have documented the important steps useful
                          
 PART-4: SUMMARY:
