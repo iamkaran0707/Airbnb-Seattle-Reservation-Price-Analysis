@@ -61,4 +61,5 @@ You can also find the detailed analysis of this project on my blogpost: https://
 PART-5: Acknowledgments
 
 This dataset has been taken from Kaggle, link is: https://www.kaggle.com/airbnb/seattle
+
 I would further like to thank Udacity for the motivation and further providing me the appropriate material and guidance.
