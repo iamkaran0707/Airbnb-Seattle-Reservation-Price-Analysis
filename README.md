@@ -1,24 +1,44 @@
-Below are some of the steps that I followed:
-1. Load all the datsets: listings, calendar and review. We will mainly be working with listings and calendar datasets, as they contain the data.
-2. Now, take the listings dataset and check the %age of null values present in them by making a bar plot. Features that have more than 40% of values as missing will be deleted from the datasets
-3. Next is to drop all the features from the dataset-- listing. We will remove around 40 features, these are mostly the features like url, or the featues that have mostly 1 unique values or the featues that have similar features present
-4. Now we will create the cleaning function for listings datasets. Here we will clean some of the features that contain %,$ sign or extract the months, dates and year from the date. We will also split the features that contains list,dictionaries in them and will conver them to separate features
-5. After we complete the cleaning function of listing, we will similarly create the cleaning function for calendar dataset.
-6. Here also we will clean the date and extract months, date and year and also remove the $ from the price feature.
-7. Once we will clean both the datasets, then we will merge both the datasets and fill the missing values
-8. For the categorical features we will replace the missing values with their mode
-9. For the numerical featues we will replace the missing values with there mean values {Note: For the features that are skewed,there we will replace the missing values with the median values, else we generally replace the missing values with mean values }
-10. Now,we will answer some of the questions related to this dataset:
-11. ---> Which is the busiest year ? What are price spikes ?
-12. Ans:  We can see that the busiest time of the year in Seattle is March means summer and we can see some increasing trend in december means winter, so it tells us that summer and winter are the busiest time in seattle and prices are more in months of June-July-aug-sep, it may be due to the fact that there are less listings available.
-13. ---> Can you describe the vibe of each Seattle neighborhood using listing descriptions?
-14. Ans: Here we will see Prices v/s months for different locations
+Hi Everyone this is the readme file for my project.Below are some of the steps that I followed:
 
-## Now will Machine learning to find out whuch all the important features of the dataset
-1. One is convert all the categorical features to the dummy variables
-2. I use 4 ML models: Decision Trees, Random Forest, Ridge Regression and XGBoost
-3. After running them models, we can see that Random Forest is the best.
-4. Now, we will find out the important features using Feature importance functionality
-5. We findout that: : Bathrooms, how many person they can accomodate, beds, property type, whether the calendar is updated or not? are the best features
+PART-1 : LIBRARIES USED:
+1. To load the dataset, perform operations and plotting the results, we have used the libraries:
+-- Numpy, pandas and matplotlib
+2. To perform the machine learning we need to import some of the below libraries:
+-- XGBoost, Ridge, RandomForestRegressor, DecisionTree (machine learning libraries)
+-- train_test_split(to split the datasets)
+3. To evaluate the results:
+-- We have used r2_score, as this is a regression problem
 
-######## THANK YOU###########
+PART-2: MOTIVATION OF THE PROJECT:
+This dataset is way useful because we can analyze some of the questions like :
+-- What are the busiest times of the year to visit Seattle? By how much do prices spike?
+-- Can you describe the vibe of each Seattle neighborhood using listing descriptions?
+-- Which are the top features/predictors that could be useful in knowing what actually attarcts the customers
+-- Futher more we will also see which is the best machine learning algorithm.
+
+PART-3 : STRUCTURE OF THE PROJECT:
+For this project we have -- 1 code file: project.ipynb
+                         -- 3 datasets : listings.csv
+                                       : calendar.csv
+                                       : reviews.csv (This is not much useful for us, we will only work with above 2 files)
+                         -- 1 readme file, where we have documented the important steps useful
+                         
+PART-4: SUMMARY:
+Now we will answer the questions as stated in part-2
+-- Which is the busiest year ? What are price spikes ?
+Ans:  Upon doing the analysis,we can see that the busiest time of the year in Seattle is March means summer and we can see some increasing trend in december means winter, so it tells us that summer and winter are the busiest time in seattle and prices are more in months of June-July-aug-sep, it may be due to the fact that there are less listings available.
+
+-- Can you describe the vibe of each Seattle neighborhood using listing descriptions?
+Ans: Here we will see Prices v/s months for different locations based on the plot that we concluded in notebook
+
+-- Which is the best machine learning model?
+Ans: After running 4 different models, we can see that Random Forest(with r2_score = 98.6%) is the best.
+
+-- Which are the top predictors or imp features?
+Ans: We findout that: : Bathrooms, how many person they can accomodate, beds, property type, whether the calendar is updated or not? are the best features.
+
+You can also find the detailed analysis of this project on my blogpost: https://karangupta485.medium.com/airbnb-seattle-reservation-price-analysis-9a0db0fc502d
+
+PART-5: Acknowledgments
+This dataset has been taken from Kaggle, link is: https://www.kaggle.com/airbnb/seattle
+I would further like to thank Udacity for the motivation and further providing me the appropriate material and guidance.
