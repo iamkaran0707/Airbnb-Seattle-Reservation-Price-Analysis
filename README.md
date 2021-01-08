@@ -1,6 +1,6 @@
 Hi Everyone this is the readme file for my project.Below are some of the steps that I followed:
 
-PART-1 : LIBRARIES USED:
+## PART-1 : LIBRARIES USED:
 
 1. To load the dataset, perform operations and plotting the results, we have used the libraries:
 -- Numpy, pandas and matplotlib
@@ -12,7 +12,7 @@ PART-1 : LIBRARIES USED:
 3. To evaluate the results:
 -- We have used r2_score, as this is a regression problem
 
-PART-2: MOTIVATION OF THE PROJECT:
+## PART-2: MOTIVATION OF THE PROJECT:
 
 This dataset is way useful because we can analyze some of the questions like :
 
@@ -24,7 +24,7 @@ This dataset is way useful because we can analyze some of the questions like :
 
 -- Futher more we will also see which is the best machine learning algorithm.
 
-PART-3 : STRUCTURE OF THE PROJECT:
+## PART-3 : STRUCTURE OF THE PROJECT:
 
 For this project we have -- 1 code file: project.ipynb
 
@@ -36,7 +36,7 @@ For this project we have -- 1 code file: project.ipynb
                                        
                          -- 1 readme file, where we have documented the important steps useful
                          
-PART-4: SUMMARY:
+## PART-4: SUMMARY:
 
 Now we will answer the questions as stated in part-2:
 
@@ -58,7 +58,7 @@ Ans: We findout that: : Bathrooms, how many person they can accomodate, beds, pr
 
 You can also find the detailed analysis of this project on my blogpost: https://karangupta485.medium.com/airbnb-seattle-reservation-price-analysis-9a0db0fc502d
 
-PART-5: Acknowledgments
+## PART-5: Acknowledgments
 
 This dataset has been taken from Kaggle, link is: https://www.kaggle.com/airbnb/seattle
 
