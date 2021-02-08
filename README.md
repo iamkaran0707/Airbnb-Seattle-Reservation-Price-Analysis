@@ -56,7 +56,7 @@ Ans: After running 4 different models, we can see that Random Forest(with r2_sco
 
 Ans: We findout that: : Bathrooms, how many person they can accomodate, beds, property type, whether the calendar is updated or not? are the best features.
 
-You can also find the detailed analysis of this project on my blogpost: https://karangupta485.medium.com/airbnb-seattle-reservation-price-analysis-9a0db0fc502d
+You can also find the detailed analysis of this project on my blogpost: https://karangupta485.medium.com/airbnb-seattle-reservation-price-analysis-db366e2439d1
 
 ## PART-5: Acknowledgments
 
